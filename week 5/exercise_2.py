@@ -3,8 +3,8 @@ import random
 valid = False
 while not valid:
     print("I NEED TWO INTEGERS, A AND B, SUCH THAT B IS 5 OR MORE BIGGER THAN A.")
-    a = int(input("Enter A: ")
-    b = int(input("Enter B: ")
+    a = int(input("Enter A: "))
+    b = int(input("Enter B: "))
     if a + 5 < b:
         valid = True
 
