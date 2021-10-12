@@ -44,7 +44,7 @@ while True:
             balance -= amount
             print("You deposited " + str(amount) + "€ succesfully. Your current balance is: " + str(balance) + "€")
         else:
-            print("Insufficient funds. Your current balance is: " + str(balance))
+            print("Insufficient funds. Your current balance is: " + str(balance) + "€")
     elif action == "3" or action == "Exit":
         exit()
 
