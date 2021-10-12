@@ -4,11 +4,16 @@ MIN_MONEY = 50
 MAX_MONEY = 5000
 PIN_LENGTH = 4
 
+DEBUG = True
+
 pin = ""
 for i in range(PIN_LENGTH):
     pin += str(random.randrange(0,10))
 
 balance = random.randrange(MIN_MONEY, MAX_MONEY)
+
+if DEBUG:
+    pin = "1234"
 
 remaining_attempts = 3
 while remaining_attempts > 0:
@@ -30,11 +35,11 @@ Choose the operation: """
 while True:
     action = input(menu)
     if action == "1" or action == "Deposit":
-        amount = input("Please enter the amount to deposit (in EUROS): ")
+        amount = int(input("Please enter the amount to deposit (in EUROS): "))
         balance += amount
         print("You withdrew " + str(amount) + "€ succesfully. Your current balance is: " + str(balance) + "€")
     elif action == "2" or action == "Cash withdrawal":
-        amount = input("Please enter the amount to withdrawal (in EUROS): ")
+        amount = int(input("Please enter the amount to withdrawal (in EUROS): "))
         if amount <= balance:
             balance -= amount
             print("You deposited " + str(amount) + "€ succesfully. Your current balance is: " + str(balance) + "€")
