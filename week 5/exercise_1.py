@@ -9,7 +9,7 @@ while not False:
         found = True
     tries += 1
     if tries == 1:
-        print("You have tried %i time".format(tries))
+        print("You have tried " + str(tries) + " time")
     else:
-        print("You have tried %i times".format(tries))
+        print("You have tried " + str(tries) + " times")
 print("Congratulations, you found the number")
