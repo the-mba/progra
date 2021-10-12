@@ -8,10 +8,10 @@ while not valid:
     if a + 5 < b:
         valid = True
 
-numbers = [int(random.randrange(a, b))]
+numbers = [ random.randrange(a, b) ]
 while len(numbers) < 5:
-    number = int(random.randrange(a, b))
+    number = random.randrange(a, b)
     if ( number + numbers[-1] ) % 2 == 1:
-        numbers.append(number)
+        numbers.append( number )
 
-print(numbers)
+print( numbers )
