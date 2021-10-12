@@ -17,6 +17,8 @@ for i in range(NUMBER_OF_GAMES):
 
     score = (human_move - ai_move) % 3
 
+    print(score)
+
     if score == 1:
         print("****** PLAYER wins ******")
     elif score == -1:
