@@ -3,7 +3,8 @@ import random
 number = random.randrange(1, 20)
 tries = 0
 found = False
-while not False:
+while not found:
+    print(number)
     attempt = int(input("Guess the number:"))
     if attempt == number:
         found = True
