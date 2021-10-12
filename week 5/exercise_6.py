@@ -25,7 +25,7 @@ for mark in marks:
 n = len(marks)
 avg = sum / n
 
-print("There " + "is " if n == 1 else "are " + str(n) + " students in the class.")
+print("There " + ("is " if n == 1 else "are ") + str(n) + " students in the class.")
 print("The average mark is " + str(avg))
 print("The highest mark is " + str(max))
 print("The lowest mark is " + str(min))
