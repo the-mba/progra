@@ -1,6 +1,6 @@
 import random
 
-NUMBER_OF_GAMES = 3
+NUMBER_OF_GAMES = 30
 MESSAGE = "ROCK, PAPER OR SCISSORS? "
 MOVES = ["ROCK", "PAPER", "SCISSORS"]
 
@@ -21,7 +21,7 @@ for i in range(NUMBER_OF_GAMES):
 
     if score == 1:
         print("****** PLAYER wins ******")
-    elif score == -1:
+    elif score == 2:
         print("****** AI wins ******")
     else:
         print("****** TIE ******")
