@@ -2,7 +2,7 @@ import random
 NUMBER_OF_GAMES = 3
 
 print("******" + str(NUMBER_OF_GAMES) + " games will be played!")
-for i in range(NUMBER_OF_GAMES):
+for i in range(1, NUMBER_OF_GAMES+1):
 
     sum_1 = 0
     print("GAME " + str(i) + " - PLAYER 1")
@@ -19,7 +19,7 @@ for i in range(NUMBER_OF_GAMES):
             break
     if sum_1 > 21:
         print("****** PLAYER 2 wins ******")
-        break
+        continue
 
     sum_2 = 0
     print("GAME " + str(i) + " - PLAYER 2")
@@ -36,7 +36,7 @@ for i in range(NUMBER_OF_GAMES):
             break
     if sum_2 > 21:
         print("****** PLAYER 1 wins ******")
-        break
+        continue
 
     if sum_1 > sum_2:
         print("****** PLAYER 1 wins ******")
