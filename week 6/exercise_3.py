@@ -5,8 +5,8 @@ valid = False
 total = 0
 
 while not valid:
-    length_list = input("Please, input the desired length for the float list: ")
-    if int(length_list) > 0:
+    length_list = int(input("Please, input the desired length for the float list: "))
+    if length_list > 0:
         valid = True
 
 for i in range(length_list):
