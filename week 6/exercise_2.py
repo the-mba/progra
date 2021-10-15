@@ -7,6 +7,7 @@ for i in range(30):
     list_1[i] = i * i
 
 list_2 = list_1
+list_1[4] = 17
 
 print("List 1 is: " + str(list_1))
 print("List 2 is: " + str(list_2))
