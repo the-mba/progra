@@ -13,5 +13,5 @@ for i in range(length_list):
     list_float.append(random.uniform(1, 49))
     total += int(list_float[-1])
 
-print(list_float)
-print(total)
+print("The list of floats is: " + str(list_float))
+print("The total sum of the list of floats is: " + str(total))
