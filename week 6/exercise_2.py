@@ -7,7 +7,7 @@ for i in range(30):
     list_1[i] = i * i
 
 list_2 = list_1
-list_1[4] = 17
+list_1[4] = 170000
 
 print("List 1 is: " + str(list_1))
 print("List 2 is: " + str(list_2))
@@ -18,6 +18,8 @@ for i in range(30):
 
 for i in range(30):
     list_4[i] = list_3[i]
+
+list_3[27] = 666666
 
 print("List 3 is: " + str(list_3))
 print("List 4 is: " + str(list_4))
