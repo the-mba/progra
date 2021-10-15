@@ -1,10 +1,12 @@
+import random
+
 list_1 = [None] * 30
 list_3 = [None] * 30
 list_4 = [None] * 30 
 
 
 for i in range(30):
-    list_1[i] = i * i
+    list_1[i] = random.randrange(i+1)
 
 list_2 = list_1
 list_1[4] = 170000
@@ -14,7 +16,7 @@ print("List 2 is: " + str(list_2))
 
 
 for i in range(30):
-    list_3[i] = 30 - i
+    list_3[i] = random.randrange(i+1)
 
 for i in range(30):
     list_4[i] = list_3[i]
