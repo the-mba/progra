@@ -1,8 +1,9 @@
-list_1 = [] * 30
-list_3 = [] * 30
+list_1 = [None] * 30
+list_3 = [None] * 30
 
 
 for i in range(30):
+    print(i)
     list_1[i] = i * i
 
 list_2 = list_1
