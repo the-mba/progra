@@ -24,3 +24,4 @@ list_3[27] = 666666
 print("List 3 is: " + str(list_3))
 print("List 4 is: " + str(list_4))
 
+print("List 1 and 2 remain the same, as there is only one list assigned to both variables. In contrast, list 3 and 4 are now different, since I created an entire new list and copied each value individually, thus they are independent from one another.")
