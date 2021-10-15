@@ -10,7 +10,7 @@ while not valid:
         valid = True
 
 for i in range(length_list):
-    list_float.append(random.randrange(1, 50))
+    list_float.append(random.uniform(1, 49))
     total += int(list_float[-1])
 
 print(list_float)
