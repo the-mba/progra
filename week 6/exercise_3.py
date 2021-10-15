@@ -5,11 +5,11 @@ valid = False
 total = 0
 
 while not valid:
-    length = input("Please, input the desired length for the float list: ")
-    if int(length) > 0:
+    length_list = input("Please, input the desired length for the float list: ")
+    if int(length_list) > 0:
         valid = True
 
-for i in range(length):
+for i in range(length_list):
     list_float.append(random.randrange(1, 50))
     total += int(list_float[-1])
 
