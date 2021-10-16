@@ -12,6 +12,7 @@ print(list_of_ints)
 
 for i in range(len(list_of_ints)):
     if list_of_ints[i] % 2:
+        print(i)
         list_of_ints.pop(i)
 
 print(list_of_ints)
