@@ -10,9 +10,11 @@ for i in range(NUMBER_OF_VALUES):
 
 print(list_of_ints)
 
-for i in range(len(list_of_ints)):
-    if list_of_ints[i] % 2:
-        print(i)
-        list_of_ints.pop(i)
+walker = 0
+while walker < len(list_of_ints):
+    if list_of_ints[walker] % 2:
+        list_of_ints.pop(walker)
+    else:
+        walker += 1
 
 print(list_of_ints)
