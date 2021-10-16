@@ -12,9 +12,9 @@ print(list_of_ints)
 
 walker = 0
 while walker < len(list_of_ints):
-    if not list_of_ints[walker] % 2:
-        list_of_ints.pop(walker)
-    else:
+    if list_of_ints[walker] % 2:
         walker += 1
+    else:
+        list_of_ints.pop(walker)
 
 print(list_of_ints)
