@@ -7,7 +7,7 @@ MAX_SCORE = 10
 list_of_scores = []
 for judge in range(NUM_OF_JUDGES):
     list_of_scores.append(random.randint(MIN_SCORE, MAX_SCORE))
-    print("Judge " + str(judge) + " gave the gymnast " + int(list_of_scores[-1]) + " point" + ("s" if list_of_scores[-1] > 1 else ""))
+    print("Judge " + str(judge) + " gave the gymnast " + str(list_of_scores[-1]) + " point" + ("s" if list_of_scores[-1] > 1 else ""))
 
 minimum = MAX_SCORE
 maximum = MIN_SCORE
