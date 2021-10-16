@@ -19,10 +19,10 @@ time_1 = end - start
 
 start = time.time()
 
-list_2= []
+list_2 = []
 
 for i in range(NUMBER_OF_VALUES):
-    list_1 += random.randint(MIN_VALUE, MAX_VALUE)
+    list_2 += [random.randint(MIN_VALUE, MAX_VALUE)]
 
 end = time.time()
 
@@ -34,11 +34,11 @@ start = time.time()
 list_3 = []
 
 for i in range(NUMBER_OF_VALUES):
-    list_1 = list_1 + [random.randint(MIN_VALUE, MAX_VALUE)]
+    list_3= list_3 + [random.randint(MIN_VALUE, MAX_VALUE)]
 
 end = time.time()
 
-time_3= end - start
+time_3 = end - start
 
 print("Time with append was: " + str(time_1))
 print("Time with += was: " + str(time_2))
