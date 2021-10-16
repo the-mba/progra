@@ -17,7 +17,7 @@ while not found:
     answer = input("Is " + str(number) + " your number (Yes/No)? ")
     if answer == "Yes":
         found = True
-    if len(memo) == MAX - MIN:
+    if len(memo) == MAX - MIN + 1:
         break
 
 if len(memo) < MAX - MIN:
