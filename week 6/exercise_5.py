@@ -2,7 +2,7 @@ import random
 
 memo = []
 
-print("Hello! Today I will be guessing your favorite number!")
+print("\nHello! Today I will be guessing your favorite number!\n")
 
 found = False
 
@@ -10,7 +10,7 @@ while not found:
     number = random.randint(1, 100)
     memo.append(number)
     answer = input("Is " + str(number) + " your number (Yes/No)? ")
-    if answer == Yes:
+    if answer == "Yes":
         found = True
 
 if len(memo) < 100:
