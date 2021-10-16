@@ -1,7 +1,7 @@
 import random
 
 MIN = 1
-MAX = 10
+MAX = 100
 
 memo = []
 
