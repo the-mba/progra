@@ -17,8 +17,10 @@ while not found:
     answer = input("Is " + str(number) + " your number (Yes/No)? ")
     if answer == "Yes":
         found = True
+    if len(memo) == MAX - MIN:
+        break
 
-if len(memo) < 100:
+if len(memo) < MAX - MIN:
     print("\nHooray, I found your number and it only took me " + str(len(memo)) + " attempt" + ("s" if len(memo) > 1 else  "") + "!")
 else:
     print("You filthy liar! I have told you all numbers!!")
