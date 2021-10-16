@@ -6,6 +6,6 @@ minimum = 0
 
 for i in types_of_notes_and_coins:
     minimum += total // i
-    total = total % i
+    total -= total // i
 
 print("The minimum number of notes and coins is: " + str(total))
