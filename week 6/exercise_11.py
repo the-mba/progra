@@ -18,3 +18,7 @@ while walker < len(list_of_ints):
         list_of_ints.pop(walker)
 
 print(list_of_ints)
+
+print("hello"+
+str(walker)+
+"!!!!!!!!")
